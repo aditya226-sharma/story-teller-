@@ -147,7 +147,7 @@ export default function Loader() {
               className="text-2xl md:text-4xl font-light tracking-[0.3em] uppercase"
             >
               <span className="bg-gradient-to-r from-[#6C63FF] via-[#00E5FF] to-[#FF4FD8] bg-clip-text text-transparent">
-                The Infinite Story
+                The World That Forgot the Sun
               </span>
             </motion.h1>
 
