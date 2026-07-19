@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 The World That Forgot the Sun
+
+An immersive interactive 3D storytelling experience built with Next.js, Three.js, and Framer Motion. Journey through a post-apocalyptic world where the artificial sun has gone dark, and follow Aren and Nova as they attempt to restore the light.
+
+A project by **aditya226-sharma** and **Dev9269**.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 with App Router
+- **3D Rendering:** Three.js, React Three Fiber, Drei
+- **Animations:** Framer Motion, GSAP
+- **Audio:** Web Audio API
+- **State:** Zustand
+- **Styling:** Tailwind CSS 4
+
+## Features
+
+- 8 cinematic story chapters with full-screen 3D environments
+- Dynamic lighting and post-processing effects
+- Procedural particle systems (stars, nebulae, galaxies)
+- Audio narration with ambient soundscapes
+- Smooth scroll-based chapter progression
+- Custom cursor with parallax effects
+- Chapter navigation with progress tracking
+- Responsive design with reduced-motion support
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start development server (port 3008)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3008](http://localhost:3008) to view the experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/            # Next.js app router pages and layout
+  components/     # React components (3D scenes, UI, effects)
+  data/           # Story chapters and content
+  hooks/          # Custom React hooks (audio, scroll, FPS)
+  shaders/        # GLSL shader code
+  store/          # Zustand state management
+  types/          # TypeScript type definitions
+```
 
-## Learn More
+## Story
 
-To learn more about Next.js, take a look at the following resources:
+The year is 2189. Helios Core, the artificial sun that sustained humanity, has shut down without warning. The world has fallen into endless night. Follow Aren, a curious explorer, and Nova, an ancient robotic companion, on an impossible journey across frozen cities, flooded metropolises, and floating havens to restore the light.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+8 chapters. 300 years of darkness. One final choice.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
